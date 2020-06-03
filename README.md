@@ -34,6 +34,8 @@ This project has two applications, one of them (invokerAPP_cats) is responsible 
      cmd> docker-compose -f docker_compose.yaml down
 ```
 
+>Note: some resources has a sleep time of 120 seconds to wait until all pre-requirements get ready in sequence.
+
 ## Accessing resources (If needed)
 
 - Application API: http://localhost:5000/v1/cats  (Query parameter's on next topic)
@@ -216,6 +218,27 @@ To help the evaluation all requests involving the rules scenarios are inside the
 ```
 
 ------ 
+## How to access Log and Dashboards (Step-by-Step)
+
+1- Log into Kibana's page, at [http://localhost:5601](http://localhost:5601).
+2- Choose the index that was already created.
+
+![Step1](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20Pass1.png?raw=true)
+
+3- Click on Saved Objects tab and then click on Import Button.
+
+![Step2](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20Pass2.png?raw=true)
+
+4- Choose the document called [All-Dashboards.json](https://github.com/brunoguidone/itchallenge/blob/master/All-Dashboards.json)
+
+------ 
+
+## Navigating through the menu
+
+
+
+------ 
+
 ## Logs
 
 Logs can be watched in real time on the following Kibana query link:
