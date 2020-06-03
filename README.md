@@ -235,7 +235,9 @@ To help the evaluation all requests involving the rules scenarios are inside the
 
 ## Navigating through the menu
 
-
+- Dashboard - Dashboards page to list all the dashboards that was created
+- Discover - Saved Search to query logs in real time
+- Visualize - Individual graphics used on dashboards
 
 ------ 
 
