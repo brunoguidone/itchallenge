@@ -80,7 +80,7 @@ To help the evaluation all requests involving the rules scenarios are inside the
 
 ## Application Flow
 
-![Flow](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/ApplicationFlux.png?raw=true)
+![AppFlow](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/ApplicationFlow.png?raw=true)
 
 
 ------
