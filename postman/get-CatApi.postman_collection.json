@@ -34,7 +34,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/v1/cats/breeds/info?breedId=ycho",
+					"raw": "http://localhost:5000/v1/cats/breeds/info?breedId=acur",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -49,7 +49,7 @@
 					"query": [
 						{
 							"key": "breedId",
-							"value": "ycho"
+							"value": "acur"
 						}
 					]
 				},
