@@ -76,7 +76,15 @@ To help the evaluation all requests involving the rules scenarios are inside the
 ![Topology](https://raw.githubusercontent.com/brunoguidone/itchallenge/master/screenshots/ProjectDraw.png)
 
 
------- 
+------
+
+## Application Flow
+
+![Flow](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/ApplicationFlux.png?raw=true)
+
+
+------
+
 
 ## Endpoints/Routes
 | HTTP Method  |  URI  |  Example of Parameter |  Action  |
