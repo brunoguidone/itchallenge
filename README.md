@@ -225,6 +225,7 @@ To help the evaluation all requests involving the rules scenarios are inside the
 ## How to access Log and Dashboards (Step-by-Step)
 
 1- Log into Kibana's page, at [http://localhost:5601](http://localhost:5601).
+
 2- Choose the index that was already created.
 
 ![Step1](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20Pass1.png?raw=true)
