@@ -12,12 +12,8 @@ This project has two applications, one of them (invokerAPP_cats) is responsible 
 
 - Environment preparation:
 
-     1. Putting Docker on Linux Containers Mode: Right click on Docker's icon near to clock, "Switch to Linux Containers"
-       
-     2. On Docker's Settings > Resources > File Sharing > Add the project's root folder
-       
-     3. Restart Docker.
-
+     - Putting Docker on Linux Containers Mode: Right click on Docker's icon near to clock, "Switch to Linux Containers" 
+     
 ------
 
 ## Docker
