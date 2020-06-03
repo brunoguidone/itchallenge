@@ -1,0 +1,10 @@
+FROM python:3.6.6
+
+COPY ./app /app
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["python","invokerAPP_cats.py"] 

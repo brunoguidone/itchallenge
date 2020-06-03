@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "169ceb12-7cc7-40fc-9e04-fc811724f01d",
+		"name": "itauChallenge - Bruno Guidone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ex1: Listar todas as Raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/breeds/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"breeds",
+						"all"
+					]
+				},
+				"description": "API capaz de listar todas as raças"
+			},
+			"response": []
+		},
+		{
+			"name": "Ex2: Listar as informações de uma raça",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/breeds/info?breedId=ycho",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"breeds",
+						"info"
+					],
+					"query": [
+						{
+							"key": "breedId",
+							"value": "ycho"
+						}
+					]
+				},
+				"description": "API capaz de listar as informações de uma raça"
+			},
+			"response": []
+		},
+		{
+			"name": "Ex3: A partir de um temperamento listar as raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/temperaments?temperament=Curious",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"temperaments"
+					],
+					"query": [
+						{
+							"key": "temperament",
+							"value": "Curious"
+						}
+					]
+				},
+				"description": "API capaz de a partir de um temperamento listar as raças"
+			},
+			"response": []
+		},
+		{
+			"name": "Ex4: A partir de uma origem listar as raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/origins?origin=United%20States",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"origins"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "United%20States"
+						}
+					]
+				},
+				"description": "API capaz de a partir de uma origem listar as raças"
+			},
+			"response": []
+		},
+		{
+			"name": "(PLUS) - Consultar 3 imagens por Raça",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/searchimgs?breedId=ycho",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"searchimgs"
+					],
+					"query": [
+						{
+							"key": "breedId",
+							"value": "ycho"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(PLUS) - Consultar 3 Imagens com Oculos Escuros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/searchimgs?hassunglass=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"searchimgs"
+					],
+					"query": [
+						{
+							"key": "hassunglass",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(PLUS) - Consultar 3 Imagens com Chapeus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/searchimgs?hashat=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"searchimgs"
+					],
+					"query": [
+						{
+							"key": "hashat",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(PLUS) - Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/cats/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"cats",
+						"healthcheck"
+					]
+				},
+				"description": "Health check da API"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
