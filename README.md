@@ -19,6 +19,7 @@ This project has two applications, one of them (invokerAPP_cats) is responsible 
      3. Restart Docker.
 
 ------
+
 ## Docker
 
 - Running containers with applications:
@@ -42,19 +43,7 @@ This project has two applications, one of them (invokerAPP_cats) is responsible 
 ------
 ## Postman Collection
 
-To help the evaluation all requests involving the rules scenarios are inside the Postman collection file.
-
-------
-## Endpoints/Routes
-| HTTP Method  |  URI  |  Example of Parameter |  Action  |
-| ------------ | ----- | -------- | -------- |
-|  GET |  /v1/cats/ | N/A |   Welcome |
-|  GET |  /v1/cats/breeds/all | N/A |   Listing all breeds |
-|  GET |  /v1/cats/breeds/info?breedId= | ?breedId=SomeID |   Listing informations about a breed by passing his ID |
-|  GET |  /v1/cats/temperaments?temperament= | ?temperament=SomeTemperament |   Listing breeds with the temperament informed |
-|  GET |  /v1/cats/origins?origin= | ?origin=SomeOrigin |   Listing breeds with the origin informed |
-|  GET |  /v1/cats/searchimgs? | ?hashat=true or ?hassunglass=true or breedId=SomeID |   Search for images with informed filter |
-|  GET |  /v1/cats/healthcheck | N/A |  Provides de health check information of API |
+To help the evaluation all requests involving the rules scenarios are inside the [Postman collection file.](https://github.com/brunoguidone/itchallenge/blob/master/postman/get-CatApi.postman_collection.json)
 
 ------
 
@@ -79,13 +68,27 @@ To help the evaluation all requests involving the rules scenarios are inside the
 - Postman v7.25.2
 
 ------
+
 ## Topology
 
-![Topology](https://raw.githubusercontent.com/brunoguidone/devIt/master/ProjectDraw.png)
+![Topology](https://raw.githubusercontent.com/brunoguidone/itchallenge/master/screenshots/ProjectDraw.png)
 
 
 ------ 
-## Examples of use:
+
+## Endpoints/Routes
+| HTTP Method  |  URI  |  Example of Parameter |  Action  |
+| ------------ | ----- | -------- | -------- |
+|  GET |  /v1/cats/ | N/A |   Welcome |
+|  GET |  /v1/cats/breeds/all | N/A |   Listing all breeds |
+|  GET |  /v1/cats/breeds/info?breedId= | ?breedId=SomeID |   Listing informations about a breed by passing his ID |
+|  GET |  /v1/cats/temperaments?temperament= | ?temperament=SomeTemperament |   Listing breeds with the temperament informed |
+|  GET |  /v1/cats/origins?origin= | ?origin=SomeOrigin |   Listing breeds with the origin informed |
+|  GET |  /v1/cats/searchimgs? | ?hashat=true or ?hassunglass=true or breedId=SomeID |   Search for images with informed filter |
+|  GET |  /v1/cats/healthcheck | N/A |  Provides de health check information of API |
+
+------
+### Examples of use:
 
 > Request for all breeds: http://localhost:5000/v1/cats/breeds/all
 
@@ -219,9 +222,21 @@ Logs can be watched in real time on the following Kibana query link:
 
 http://localhost:5601/app/kibana#/discover?_g=()&_a=(columns:!(_source),index:catsapi,interval:auto,query:(match_all:()),sort:!(date,desc))
 
+![LogSearch](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20Log%20Search.png?raw=true)
+
 ------ 
 ## Dashboards
 
 Dashboards can be accessed by the following link:
 
 http://localhost:5601/app/kibana#/dashboards?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-12h,mode:quick,to:now))
+
+
+> Dashboard - Counting API Execution
+![Dash1- Counting API Executions](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20DashBoard%20-%20Count%20Execution.png?raw=true)
+
+> Dashboard - Couting API Errors
+![Dash2 - Counting Errors](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20DashBoard%20-%20Error%20Count.png?raw=true)
+
+> Dashboard - Counting Latency
+![Dash3 - Counting Latency](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20DashBoard%20-%20Latency.png?raw=true)
