@@ -222,6 +222,7 @@ Logs can be watched in real time on the following Kibana query link:
 
 http://localhost:5601/app/kibana#/discover?_g=()&_a=(columns:!(_source),index:catsapi,interval:auto,query:(match_all:()),sort:!(date,desc))
 
+> Dashboard - Query - Log Search - Real Time
 ![LogSearch](https://github.com/brunoguidone/itchallenge/blob/master/screenshots/Kibana%20-%20Log%20Search.png?raw=true)
 
 ------ 
